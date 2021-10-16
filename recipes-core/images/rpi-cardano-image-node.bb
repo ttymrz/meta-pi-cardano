@@ -8,6 +8,7 @@ IMAGE_INSTALL += " \
 	bash-completion \
 	bc \
 	cardano-node-bin \
+	coreutils \
 	cncli \
 	curl \
 	ethtool \
@@ -18,8 +19,11 @@ IMAGE_INSTALL += " \
 	lsof \
 	ncurses \
 	ncurses-tools \
+	procps \
 	rng-tools \
 	tmux \
 	usbutils \
 	vim \
 "
+
+IMAGE_LINGUAS = "en-us en-gb"
