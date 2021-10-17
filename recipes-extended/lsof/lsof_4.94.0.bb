@@ -14,6 +14,8 @@ SRC_URI = " \
 PV = "4.94.0+git${SRCPV}"
 SRCREV = "005e014e1abdadb2493d8b3ce87b37a2c0a2351d"
 
+DEPENDS = "libtirpc"
+
 S = "${WORKDIR}/git"
 
 export LSOF_INCLUDE = "${STAGING_INCDIR}"
@@ -21,6 +23,8 @@ export LSOF_INCLUDE = "${STAGING_INCDIR}"
 do_configure () {
 	export LSOF_AR="${AR} cr"
 	export LSOF_RANLIB="${RANLIB}"
+	export LSOF_DINC="${CFLAGS}"
+	export LSOF_CFGL="${LDFLAGS}"
 	if [ "x${GLIBCVERSION}" != "x" ]; then
 		LINUX_CLIB=`echo ${GLIBCVERSION} |sed -e 's,\.,,g'`
 		LINUX_CLIB="-DGLIBCV=${LINUX_CLIB}"
@@ -33,7 +37,7 @@ export I = "${STAGING_INCDIR}"
 export L = "${STAGING_INCDIR}"
 
 do_compile () {
-	oe_runmake 'CC=${CC}' 'CFGL=${LDFLAGS} -L./lib -llsof' 'DEBUG=' 'INCL=${CFLAGS}'
+	oe_runmake 'CC=${CC}' 'DEBUG='
 }
 
 do_install () {
