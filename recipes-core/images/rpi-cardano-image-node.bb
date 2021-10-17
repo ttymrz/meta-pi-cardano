@@ -11,7 +11,10 @@ IMAGE_INSTALL += " \
 	coreutils \
 	cncli \
 	curl \
+	dialog \
+	e2fsprogs \
 	ethtool \
+	gnupg \
 	htop \
 	iproute2 \
 	jq \
@@ -21,7 +24,9 @@ IMAGE_INSTALL += " \
 	ncurses-tools \
 	procps \
 	rng-tools \
+	sudo \
 	tmux \
+	tzdata \
 	usbutils \
 	vim \
 "
