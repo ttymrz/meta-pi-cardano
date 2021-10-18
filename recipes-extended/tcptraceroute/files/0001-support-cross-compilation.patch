@@ -1,0 +1,53 @@
+From 958c3b5987b197f5854a1ae01178c1ffcc033026 Mon Sep 17 00:00:00 2001
+From: Tetsuya Morizumi <tetsuya.morizumi@gmail.com>
+Date: Mon, 18 Oct 2021 23:15:18 +0900
+Subject: [PATCH] support cross compilation
+
+This is a workaround patch for cross compilation on linux-gnu system.
+---
+ configure.ac | 8 ++++++++
+ 1 file changed, 8 insertions(+)
+
+diff --git a/configure.ac b/configure.ac
+index f195ecf..a8a511f 100644
+--- a/configure.ac
++++ b/configure.ac
+@@ -161,6 +161,8 @@ AC_RUN_IFELSE([AC_LANG_PROGRAM( [], [
+ 		HAVE_SOLARIS=yes
+ 	],[
+ 		AC_MSG_RESULT(no)
++	],[
++		HAVE_SOLARIS=no
+ 	])
+ 
+ # Is this BSDI?
+@@ -178,6 +180,8 @@ AC_RUN_IFELSE([AC_LANG_PROGRAM( [], [
+ 		HAVE_BSDI=yes
+ 	],[
+ 		AC_MSG_RESULT(no)
++	],[
++		HAVE_BSDI=no
+ 	])
+ 
+ # Is this NetBSD?
+@@ -195,6 +199,8 @@ AC_RUN_IFELSE([AC_LANG_PROGRAM( [], [
+ 		HAVE_NETBSD=yes
+ 	],[
+ 		AC_MSG_RESULT(no)
++	],[
++		HAVE_NETBSD=no
+ 	])
+ 
+ # Is this MacOS X?
+@@ -212,6 +218,8 @@ AC_RUN_IFELSE([AC_LANG_PROGRAM( [], [
+ 		HAVE_MACOSX=yes
+ 	],[
+ 		AC_MSG_RESULT(no)
++	],[
++		HAVE_MACOSX=no
+ 	])
+ 
+ # Handle --enable-noselect-default
+-- 
+2.32.0.windows.2
+
