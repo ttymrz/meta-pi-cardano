@@ -25,6 +25,7 @@ IMAGE_INSTALL += " \
 	procps \
 	rng-tools \
 	sudo \
+	tcptraceroute \
 	tmux \
 	tzdata \
 	usbutils \
