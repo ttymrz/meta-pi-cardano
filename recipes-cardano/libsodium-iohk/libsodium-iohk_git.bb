@@ -11,5 +11,6 @@ S = "${WORKDIR}/git"
 
 inherit autotools
 
+DISABLE_STATIC = ""
 EXTRA_OECONF = " --disable-shared --enable-static"
 
