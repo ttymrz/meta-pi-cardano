@@ -281,3 +281,4 @@ CONF_VERSION = "1"
 #
 INIT_MANAGER = "systemd"
 
+WKS_FILE = "sdimage-pi-cardano-node.wks"
