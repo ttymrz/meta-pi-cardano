@@ -11,7 +11,7 @@ SRC_URI = " \
 	file://0001-Remove-host-information-from-version.h.patch \
 "
 
-PV = "4.94.0+git${SRCPV}"
+PV = "4.94.0"
 SRCREV = "005e014e1abdadb2493d8b3ce87b37a2c0a2351d"
 
 DEPENDS = "libtirpc"
