@@ -17,6 +17,7 @@ IMAGE_INSTALL += " \
 	gnupg \
 	htop \
 	iproute2 \
+	iproute2-ss \
 	jq \
 	less \
 	lsof \
