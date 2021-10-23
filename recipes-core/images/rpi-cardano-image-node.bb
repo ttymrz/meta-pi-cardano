@@ -33,4 +33,3 @@ IMAGE_INSTALL += " \
 	vim \
 "
 
-IMAGE_LINGUAS = "en-us en-gb"
