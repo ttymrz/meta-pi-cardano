@@ -3,7 +3,7 @@ include recipes-core/images/core-image-base.bb
 
 COMPATIBLE_MACHINE = "^rpi$"
 
-IMAGE_INSTALL += " \
+IMAGE_INSTALL_append = " \
 	bash \
 	bash-completion \
 	bc \
