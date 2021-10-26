@@ -1,6 +1,6 @@
 # short-description: Create Cardano-node Raspberry Pi SD card image
 # long-description:  Create Cardano-node Raspberry Pi SD card image
 
-part /boot --source bootimg-partition --ondisk mmcblk0 --fstype=vfat --label boot --active --align 4096 --size 256M --overhead-factor 1
+part /boot --source bootimg-partition --ondisk mmcblk0 --fstype=vfat --label boot --active --align 4096 --size 252M --overhead-factor 1
 part / --source rootfs --ondisk mmcblk0 --fstype=ext4 --label root --align 4096 --size 20G --overhead-factor 1
 part swap --ondisk mmcblk0 --fstype=swap --align 4096 --size 4G --overhead-factor 1
