@@ -30,6 +30,5 @@ IMAGE_INSTALL_append = " \
 	tmux \
 	tzdata \
 	usbutils \
-	vim \
 "
 
