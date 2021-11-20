@@ -38,14 +38,14 @@ layers
 
 ### Setup
 
-```shell
+```console
 $ export TEMPLATECONF=<path>/layers/meta-pi-cardano/conf
 $ source <path>/layers/poky/oe-init-build-env
 ```
 
 ### Build
 
-```shell
+```console
 $ bitbake rpi-cardano-image-node
 ```
 
@@ -53,7 +53,7 @@ $ bitbake rpi-cardano-image-node
 
 Replace `sdx` with your SD card block device. 
 
-```shell
+```console
 $ cp ./tmp/deploy/images/raspberrypi4-64/rpi-stakepool-image-node-raspberrypi4-64.wic.* ./
 $ sudo bmaptool copy rpi-stakepool-image-node-raspberrypi4-64.wic.bz2 /dev/<sdx>
 ```
@@ -63,7 +63,7 @@ $ sudo bmaptool copy rpi-stakepool-image-node-raspberrypi4-64.wic.bz2 /dev/<sdx>
 1. Connect Raspberry Pi UART1 to your PC.
 2. Boot Raspberry Pi and login as root.
 
-```Shell
+```console
 root@raspberrypi4-64:~# /opt/cardano/bin/cardano-node --version
 root@raspberrypi4-64:~# /opt/cardano/bin/cardano-cli --version
 root@raspberrypi4-64:~# /opt/cardano/bin/cncli --version
