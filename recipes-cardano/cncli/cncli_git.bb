@@ -7,8 +7,8 @@ inherit cargo
 
 SRC_URI = "gitsm://github.com/AndrewWestberg/cncli.git;protocol=https;branch=develop"
 
-PV = "v4.0.2+git${SRCPV}"
-SRCREV = "334a3fa2e4abb8535b13988e24cdcc4a0f93f519"
+PV = "4.0.3+git${SRCPV}"
+SRCREV = "d7a76a60bb52a7e92c73b8660d88aebb1e09fe94"
 
 S = "${WORKDIR}/git"
 
