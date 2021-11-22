@@ -8,7 +8,7 @@ This layer depends on:
 
 * URI: git://git.yoctoproject.org/poky
   * branch: hardknott
-  * tag: hardknott-3.3.3
+  * tag: hardknott-3.3.4
 
 * URI: git://git.openembedded.org/meta-openembedded
   * layers: meta-oe, meta-multimedia, meta-networking, meta-python
