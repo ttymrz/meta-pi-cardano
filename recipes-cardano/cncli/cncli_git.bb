@@ -41,8 +41,4 @@ do_compile() {
 	cargo build ${CARGO_BUILD_FLAGS}
 }
 
-# delete unused rlib
-do_install_append() {
-	rm -fr ${D}/${libdir}
-}
 
