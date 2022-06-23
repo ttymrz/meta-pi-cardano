@@ -5,10 +5,10 @@ LIC_FILES_CHKSUM = "file://LICENSE;md5=86d3f3a95c324c9479bd8986968f4327 \
 
 inherit cargo
 
-SRC_URI = "gitsm://github.com/AndrewWestberg/cncli.git;protocol=https;branch=develop"
+SRC_URI = "gitsm://github.com/cardano-community/cncli.git;protocol=https;branch=develop"
 
-PV = "4.0.4+git${SRCPV}"
-SRCREV = "91e61b241d92d30e5ebba1acbe395a4be5186254"
+PV = "5.0.1+git${SRCPV}"
+SRCREV = "2c89a3aac7ef94a3f94a3fc0d1897931e79ef799"
 
 S = "${WORKDIR}/git"
 
