@@ -7,8 +7,8 @@ inherit cargo
 
 SRC_URI = "gitsm://github.com/cardano-community/cncli.git;protocol=https;branch=develop"
 
-PV = "5.0.4+git${SRCPV}"
-SRCREV = "8c21346040d2d69c56180f1792adb49c7af80f82"
+PV = "5.0.6+git${SRCPV}"
+SRCREV = "558eb4b6d20ece677b06df5210a8d8f049dcd198"
 
 S = "${WORKDIR}/git"
 
