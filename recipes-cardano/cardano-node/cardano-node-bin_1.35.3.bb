@@ -2,8 +2,8 @@ DESCRIPTION = "cardano-node binary from armada-alliance"
 LICENSE = "Apache-2.0"
 LIC_FILES_CHKSUM = "file://${COMMON_LICENSE_DIR}/Apache-2.0;md5=89aea4e17d99a7cacdbeed46a0096b10"
 
-SRC_URI = "https://github.com/armada-alliance/cardano-node-binaries/raw/main/static-binaries/1_35_0.zip"
-SRC_URI[sha256sum] = "1be9136c25cd8c1d2e330dd31912886f942664a90cb848012b13c57fb344faef"
+SRC_URI = "https://github.com/armada-alliance/cardano-node-binaries/raw/main/static-binaries/1_35_3.zip"
+SRC_URI[sha256sum] = "cb1362f4d9a2e5d00b0397402f27fac0ab335f3c063009c25ab493692d7b0d62"
 
 S = "${WORKDIR}/cardano-node"
 
